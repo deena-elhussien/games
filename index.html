@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  
+
+    <!-- start nav -->
+
+    <nav class="navbar navbar-expand-lg position-sticky top-0 rounded-4 shadow col-md-9  m-auto">
+        <div class="container">
+          <a class="navbar-brand text-white fs-5" href="#"> 
+            <img src="./imgs/logo-sm.png" alt="logo" >
+            GAME REVIEWS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#mmorpg">MMORPG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#shooterData">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PERMADEATH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SUPERHERO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- end nav -->
+   
+    
+    <!-- start mmorpg -->
+    <section id="mmorpg" class="">
+        <div class="container">
+            <div class="row g-3" id="rowData">
+              
+             
+            </div>
+        </div>
+    </section>
+    <!-- end mmorpg -->
+
+     <!-- show details -->
+     <div class="container">
+      <div class="row " id="rowDetails">
+        
+      </div>
+
+    <section class="details">
+      <div class="col-md-12">
+        <div class="header d-flex justify-content-between">
+          <h3 class="my-3 text-white">Details Game</h3>
+        <button class=" my-3 btn  text-light">X</button>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            
+            <div class="photo text-white">
+              
+              
+              <img src='./imgs/thumbnail.jpg' alt="" class=" w-100">
+            </div>
+          </div>
+        
+            <div class="col-md-6">
+              <div class="details text-white ">
+                <div class="">
+                  <span class="main">Title:</span>
+                <span class="main">${item.title}</span>
+                </div>
+                <div class="my-2">
+                  <span>Category:</span>
+                  <span class="vip rounded-2 p-1">MMORPG</span>
+                </div>
+                <div class="my-2">
+                  <span>Platform:</span>
+                  <span class="vip rounded-2 p-1">${item.platform}</span>
+                </div>
+                <div class="my-2">
+                  <span>Status:</span>
+                  <span class="vip rounded-2 p-1">${item.status}</span>
+                </div>
+                
+
+                
+                <p class="mb-3">${item.short_description}</p>
+                
+                <button class="btn btn-outline-warning text-white">Show More</button>
+              </div>
+            </div>
+          
+         
+         
+        </div>
+      </div>
+    </section>
+
+
+  <div class="loading d-flex justify-content-center align-items-center position-fixed top-0 left-0 w-100 h-100 d-none">
+    <span class="loader"></span>
+  </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
